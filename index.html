@@ -4,22 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teatro Argentino de La Plata</title>
+    <link rel="stylesheet" href="./static/css/style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
+        <!--
+            La barra de navegación son 3 elementos:
+            - Un div con el logo (clickeable)
+            - Una lista de links (Historia, El teatro, Programacion, Contacto)
+            - Un div con el botón de iniciar sesión
+        -->
         <nav>
             <div>
-                <p>Aquí iría el logo</p>
-                <a href="https://gba.gob.ar/teatro_argentino">Teatro Argentino de La Plata</a>
+                <a href="https://gba.gob.ar/teatro_argentino">
+                    <img src="./imagenes/logoTeatro.png" alt="Teatro Argentino de La Plata" class="nav-item-img">
+                </a>
             </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="historia.html">HISTORIA</a>
+                </li>
+                <li>
+                    <a href="">EL TEATRO</a>
+                </li>
+                <li>
+                    <a href="">PROGRAMACIÓN</a>
+                </li>
+                <li>
+                    <a href="">CONTACTO</a>
+                </li>
+            </ul>
             <div>
-                <a href="historia.html">Historia</a>
-                <a href="">El teatro</a>
-                <a href="">Programación</a>
-                <a href="">Contacto</a>
-            </div>
-            <div>
-                <a href="">Iniciar sesión</a>
+                <a href="">INICIAR SESIÓN</a>
             </div>
         </nav>
     </header>
