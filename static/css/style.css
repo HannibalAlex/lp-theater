@@ -85,5 +85,17 @@ nav div a{
     align-self: center;
 }
 
+footer{
+    display: flex;
+    background-color: darkgray;
+    justify-content:center;
+    padding: 0 50px;
+    align-items: center;
+}
 
-  
+footer div{
+    flex: 1;
+    border: 2px solid black;
+    text-align: center;
+    padding: 0;
+}
