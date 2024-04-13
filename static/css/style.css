@@ -180,14 +180,24 @@ footer div p {
 .item3 h2{
     font-size: 3rem;
     font-family: 'Times New Roman', Times, serif;
+    margin: 10px 5px;
 }
 .item3 h3{
     font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px 5px;
 }
 .item3 p{
     font-size: 0.8rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px 5px;
+}
+.item3 button{
+    background-color:var(--bg-color);
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+    margin: 10px;
 }
 .item4{
     background-color: rgb(46, 41, 41);
@@ -199,14 +209,26 @@ footer div p {
     color:rgb(196, 17, 17);
     font-size: 3rem;
     font-family: 'Times New Roman', Times, serif;
+    margin: 10px 5px;
 }
 .item4 h3{
     font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px 5px;
 }
 .item4 p{
     font-size: 0.8rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px 5px;
+}
+.item4 button{
+    background-color:rgb(196, 17, 17);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+    width: 100px;
+    margin: 10px;
 }
 .item5{
     background-color: rgb(255, 0, 0);
@@ -228,14 +250,26 @@ footer div p {
     color:black;
     font-size: 3rem;
     font-family: 'Times New Roman', Times, serif;
+    margin: 10px 5px;
 }
 .item7 h3{
     font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px 5px;
 }
 .item7 p{
     font-size: 0.8rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px 5px;
+}
+.item7 button{
+    background-color:black;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+    width: 100px;
+    margin: 10px;
 }
 
 /*  Fin de Estilos para la grilla del body */
