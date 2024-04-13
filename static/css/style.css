@@ -11,6 +11,9 @@
 
 *{
     font-family: 'Nunito',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 a{
@@ -20,12 +23,13 @@ a{
 .header{
     background-color:var(--bg-color);
     color: #fff;
-    position: fixed;
+    position: sticky;
     top:0;
     left: 0;
     width: 100%;
     z-index: 9999;
     color:var(--bg-input-color);
+    
 }
 
 nav{
@@ -44,6 +48,7 @@ nav div{
     /*border: 2px solid black;*/
     display: flex;
     text-align: center;
+    /*min-width: 100px;*/
     max-width: 100px;
 }
 
@@ -89,9 +94,10 @@ nav div a{
     border-radius: 20px;
     color: #fff;
     cursor: pointer;    
-    height: 10px;
+    height: 15px;
     font-size: 10px;
     align-self: center;
+    text-align: center;
 }
 
 footer{
@@ -121,4 +127,60 @@ footer div p {
     text-decoration: none;
     list-style: none;
     color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    display: grid;
+    border: 3px solid blue;
+    grid-template-columns:repeat(12,1fr);
+    grid-template-rows: repeat(4,200px);
+    gap: 5px;
+}
+
+.item{
+    border: 2px solid green;
+}
+.item1{
+    background-color: aqua;
+    grid-column:1/-1 ;
+    grid-row: 1/2;
+}
+.item2{
+    background-color: rgb(255, 138, 12);
+    grid-column: 1/7;
+    /*grid-row: 2/4;*/
+}
+.item3{
+    background-color: cornflowerblue;
+    grid-column: 7/-1;
+    /*grid-row:2/4;*/
+}
+.item4{
+    background-color: rgb(191, 255, 0);
+    grid-column:1/7;
+    /*grid-row:4/6;*/
+}.item5{
+    background-color: rgb(255, 0, 0);
+    grid-column:7/-1;
+    /*grid-row:4/6;*/
+}
+.item6{
+    background-color: rgb(170, 0, 255);
+    grid-column:1/7;
+    /*grid-row:4/6;*/
+}
+.item7{
+    background-color: rgba(136, 141, 105, 0.692);
+    grid-column:7/-1;
+    /*grid-row:4/6;*/
 }
