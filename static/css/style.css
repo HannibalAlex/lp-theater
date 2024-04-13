@@ -64,13 +64,20 @@ nav div a{
     display: flex;
     padding: 0 50px;
     gap: 10px;
-    color: var(--bg-input-color);
+    
 }
 
 .nav-links li {
     /*border: 2px solid black;*/
     align-self: center;
     text-align: center;
+    
+}
+
+.nav-links li a {
+    /*border: 2px solid black;*/
+    /* Este es el texto que aparece en los list items de la navbar */ 
+    color:var(--footer-color);
 }
 
 .nav-item-img{
@@ -147,14 +154,12 @@ footer div p {
 
 .container{
     display: grid;
-    border: 3px solid blue;
     grid-template-columns:repeat(12,1fr);
     grid-template-rows: repeat(4,200px);
-    gap: 5px;
 }
 
 .item{
-    border: 2px solid green;
+    /*border: 2px solid green;*/
 }
 .item1{
     background-color: aqua;
@@ -167,7 +172,7 @@ footer div p {
     /*grid-row: 2/4;*/
 }
 .item3{
-    background-color: cornflowerblue;
+    background-color:var(--bg-color);
     grid-column: 7/-1;
     /*grid-row:2/4;*/
 }
