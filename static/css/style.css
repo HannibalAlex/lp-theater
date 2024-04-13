@@ -293,27 +293,14 @@ footer div a{
     nav{
         height: 100px;
         flex-direction: column;
-    }
-    /* Traigo los links hacia la izquierda */
-    .nav-links{
+        align-items: center;
         padding: 0;
+        margin: 10px 10px;
     }
+
+   
 }
 
-@media(max-width:560px){
-    nav{
-        height: 150px;
-        flex-direction: column;
-        gap: 20px;
-    }
-    /* Traigo los links hacia la izquierda */
-    .nav-links{
-        padding: 0;
-    }
-    .nav-links li {
-        /*border: 2px solid black;*/
-        align-self: left;
-        text-align: left;
-    }
-    
-}
+
+
+
