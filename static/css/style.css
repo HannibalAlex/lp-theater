@@ -135,6 +135,17 @@ footer div p {
     font-size: 10px;
 }
 
+footer div h3{
+    margin: 10px 0;
+}
+
+footer div a{
+    font-size: 10px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: white;
+}
+
 .list-social{
     display: flex;
     justify-content:center;
@@ -142,6 +153,7 @@ footer div p {
     text-decoration: none;
     list-style: none;
     color: white;
+    margin: 10px 0;
 }
 
 
