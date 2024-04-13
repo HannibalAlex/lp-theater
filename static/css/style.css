@@ -63,7 +63,6 @@ nav div a{
     display: flex;
     padding: 0 50px;
     gap: 10px;
-    text-decoration: none;
     color: var(--bg-input-color);
 }
 
@@ -100,6 +99,8 @@ nav div a{
     text-align: center;
 }
 
+/* Inicio de estilos del footer */
+
 footer{
     display: flex;
     background-color: var(--footer-color);
@@ -130,13 +131,11 @@ footer div p {
 }
 
 
+/* Fin de estilos del footer */
 
 
 
-
-
-
-
+/*  Inicio de Estilos para la grilla del body */
 
 
 .container{
@@ -183,4 +182,26 @@ footer div p {
     background-color: rgba(136, 141, 105, 0.692);
     grid-column:7/-1;
     /*grid-row:4/6;*/
+}
+
+/*  Fin de Estilos para la grilla del body */
+
+
+/* Media querys */
+
+@media(max-width:840px){
+    nav{
+        height: 100px;
+        flex-direction: column;
+        text-align: left;
+    };
+}
+
+@media(max-width:560px){
+    nav{
+        height: 150px;
+        flex-direction: column;
+        gap: 20px;
+        text-align: left;
+    };
 }
