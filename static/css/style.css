@@ -160,6 +160,7 @@ footer div p {
 
 .item{
     /*border: 2px solid green;*/
+    background-color: transparent;
 }
 .item1{
     background-color: aqua;
@@ -176,11 +177,38 @@ footer div p {
     grid-column: 7/-1;
     /*grid-row:2/4;*/
 }
+.item3 h2{
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.item3 h3{
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.item3 p{
+    font-size: 0.8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .item4{
-    background-color: rgb(191, 255, 0);
+    background-color: rgb(46, 41, 41);
+    color: white;
     grid-column:1/7;
     /*grid-row:4/6;*/
-}.item5{
+}
+.item4 h2{
+    color:rgb(196, 17, 17);
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.item4 h3{
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.item4 p{
+    font-size: 0.8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.item5{
     background-color: rgb(255, 0, 0);
     grid-column:7/-1;
     /*grid-row:4/6;*/
@@ -191,9 +219,23 @@ footer div p {
     /*grid-row:4/6;*/
 }
 .item7{
-    background-color: rgba(136, 141, 105, 0.692);
+    background-color: rgb(116, 41, 41);
     grid-column:7/-1;
+    color: white;
     /*grid-row:4/6;*/
+}
+.item7 h2{
+    color:black;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.item7 h3{
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.item7 p{
+    font-size: 0.8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /*  Fin de Estilos para la grilla del body */
