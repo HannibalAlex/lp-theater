@@ -35,6 +35,7 @@ a{
     
 }
 
+
 nav{
     display: flex;
     justify-content:space-between;
@@ -298,6 +299,7 @@ footer div a{
 /* ========================= Fin de Estilos para la grilla del body ========================= */
 
 
+
 /* =========================== Estilos para el SLIDER / CARROUSEL =========================== */
 
 /* Slideshow container */
@@ -307,15 +309,15 @@ footer div a{
     position: relative;
     margin: auto;
     overflow: hidden;
-  }
+}
   
-  /* Hide the images by default */
-  .mySlides {
+/* Hide the images by default */
+.mySlides {
     display: none;
-  }
+}
   
-  /* Next & previous buttons */
-  .prev, .next {
+/* Next & previous buttons */
+.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -328,21 +330,21 @@ footer div a{
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
+}
   
-  /* Position the "next button" to the right */
-  .next {
+/* Position the "next button" to the right */
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
+}
   
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
-  }
+}
   
-  /* Caption text */
-  .textSlide {
+/* Caption text */
+.textSlide {
     color: var(--bg-color);
     font-size: 15px;
     padding: 8px 12px;
@@ -350,21 +352,21 @@ footer div a{
     bottom: 8px;
     width: 100%;
     text-align: center;
-  }
-  .textSlide h2{
+}
+.textSlide h2{
     font-size: 3.5rem;
     font-family: 'Times New Roman', Times, serif;
-  }
-  .textSlide h3{
+}
+.textSlide h3{
     font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  .textSlide p
-  {
+}
+.textSlide p
+{
     font-family: 'Roboto',sans-serif;
     font-size: 1.5rem;
-  }
-  .textSlide button{
+}
+.textSlide button{
     background-color:var(--primary-color);
     color: white;
     border-radius: 20px;
@@ -373,18 +375,28 @@ footer div a{
     width: 150px;
     margin: 10px;
 }
-  
+
+.textSlide button.buttonTransparent{
+    background-color:transparent;
+    color: var(--bg-color);
+    border-radius: 20px;
+    border: 1px solid var(--bg-color);
+    height: 30px;
+    width: 150px;
+    margin: 10px;
+}
+
   /* Number text (1/3 etc) */
-  .numbertext {
+.numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
+}
   
-  /* The dots/bullets/indicators */
-  .dot {
+/* The dots/bullets/indicators */
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -393,25 +405,26 @@ footer div a{
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
+}
   
-  .active, .dot:hover {
+.active, .dot:hover {
     background-color: #717171;
-  }
+}
   
-  /* Fading animation */
-  .fade {
+/* Fading animation */
+.fade {
     animation-name: fade;
     animation-duration: 1.5s;
-  }
+}
   
-  @keyframes fade {
+@keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
-  }
+}
 
 
 /* =========================== Fin del SLIDER / CARROUSEL =========================== */
+
 
 
 /* ================================== Media querys ================================== */
