@@ -49,14 +49,140 @@
     <main>
         <div class="container">
             <div class="item item1">
+                
+                <!-- imagen de prueba
+                <img src="./imagenes/carrousel1.jpg" alt="Obra 1" class="img-grid">
+                -->
+
                 <!--
                 CARROUSEL
-                <p>ACA IRIA EL CARROUSELL CON LAS FOTOS DE LAS OBRAS QUE ESTÉN EN CARTELERA EN ESTE MOMENTO</p>
-                <p>LA IDEA ES MOSTRAR POR LO MENOS TRES OBRAS A LA VEZ</p>
-                <p>Y QUE SE PUEDA NAVEGAR CON EL SLIDER O "BOTONCITOS" A IZQUIERDA Y DERECHA DEL CARROUSELL</p>
-                <p>Ver mas...</p>
+                    ESTE ES UN EJEMPLO DE CARROUSEL QUE MUESTRA LAS FOTOS DE LAS OBRAS QUE ESTAN EN CARTELERA
+                    SE TOMO DESDE W3SCHOOLS, INCORPORA UN SCRIPT QUE ESTÁ MÁS ABAJO
                 -->
-                <img src="./imagenes/carrousel1.jpg" alt="Obra 1" class="img-grid">
+
+
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="./imagenes/carrousel1.jpg" class="img-grid">
+                    <div class="textSlide">
+                        <h3>VIE 12 y SÁB 13 | 22:00 hs</h3>
+                        <h2>Corpórica</h2>
+                        <p>Obra de Danza-Teatro y Multimedia</p>
+                        <button>
+                            MAS INFO
+                        </button>
+                        <button>
+                            COMPRAR ENTRADAS
+                        </button>
+                    </div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="./imagenes/carrousel2.jpg" class="img-grid">
+                    <div class="textSlide">
+                        <h3>JUE 11 | 22:00 hs</h3>
+                        <h2>Romeo y Julieta</h2>
+                        <p>Willian Shakespeare - Ópera</p>
+                        <button>
+                            MAS INFO
+                        </button>
+                        <button>
+                            COMPRAR ENTRADAS
+                        </button>
+                    </div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="./imagenes/carrousel3.jpg" class="img-grid">
+                    <div class="textSlide">
+                        <h3>DOM 14 | 22:00 hs</h3>
+                        <h2>Prometeo Sostakovic</h2>
+                        <p>String Quartet No. 12 in D-flat Major, Op.</p>
+                        <button>
+                            MAS INFO
+                        </button>
+                        <button>
+                            COMPRAR ENTRADAS
+                        </button>
+                    </div>
+                    </div>
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+
+            
+                <!--
+                    ACA ARRANCA EL SCRIPT QUE LO MANEJA
+                    VER DE SACARLO A UN ARCHIVO
+                -->
+                <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides");
+                      let dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+                    /*
+                    function showSlides() {
+                        let i;
+                        let slides = document.getElementsByClassName("mySlides");
+                        let dots = document.getElementsByClassName("dot");
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                        }
+                        slideIndex++;
+                        if (slideIndex > slides.length) {slideIndex = 1}    
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex-1].style.display = "block";  
+                        dots[slideIndex-1].className += " active";
+                        setTimeout(showSlides, 6000); // El timeout para que cambie de slide
+                    }
+                    */
+                </script>
+
+                <!--
+                    FIN DEL SCRIPT QUE MANEJA EL CARROUSEL
+                -->
+            
             </div>
 
             <!-- A CONTINUACIÓN SERÍAN 3 FILAS, LA PRIMERA CON UN ENLACE A HISTORIA 
