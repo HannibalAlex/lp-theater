@@ -215,7 +215,7 @@ footer div a{
     margin: 10px;
 }
 .item4{
-    padding: 50px 50px 50px 50px;
+    padding: 25px 50px 50px 50px;
     background-color: var(--secondary-color);
     color: white;
     grid-column:1/7;
@@ -257,7 +257,7 @@ footer div a{
     /*grid-row:4/6;*/
 }
 .item7{
-    padding: 50px 50px 50px 50px;
+    padding: 25px 50px 50px 50px;
     /*background-color: rgb(116, 41, 41);*/
     background-color: var(--primary-color);
     grid-column:7/-1;
