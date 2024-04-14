@@ -169,7 +169,7 @@ footer div a{
     display: grid;
     grid-template-columns:repeat(12,1fr);
     /* Una fila inicial de 600px y luego 3 de 250px */
-    grid-template-rows: 600px repeat(3,250px);
+    grid-template-rows: 600px repeat(3,300px);
 }
 
 .item{
@@ -187,6 +187,7 @@ footer div a{
     /*grid-row: 2/4;*/
 }
 .item3{
+    padding: 50px 50px 50px 50px;
     background-color:var(--bg-color);
     grid-column: 7/-1;
     /*grid-row:2/4;*/
@@ -214,6 +215,7 @@ footer div a{
     margin: 10px;
 }
 .item4{
+    padding: 50px 50px 50px 50px;
     background-color: rgb(46, 41, 41);
     color: white;
     grid-column:1/7;
@@ -255,6 +257,7 @@ footer div a{
     /*grid-row:4/6;*/
 }
 .item7{
+    padding: 50px 50px 50px 50px;
     background-color: rgb(116, 41, 41);
     grid-column:7/-1;
     color: white;
@@ -292,12 +295,10 @@ footer div a{
     height:100%;
     object-fit: cover;
     overflow: hidden;
-   
-/*
+    /*
     -o-object-fit: fill;
     object-fit: fill;
     */
-    
 }
 
 /*  Fin de Estilos para la grilla del body */
@@ -305,7 +306,7 @@ footer div a{
 
 /* Media querys */
 
-@media(max-width:840px){
+@media(max-width:900px){
     /* Hace responsive la navbar */
     nav{
         height: 100px;
@@ -319,15 +320,34 @@ footer div a{
         flex-direction: column;
         align-items: center;
         padding: 0;
-        margin: 10px 10px;
+        /*margin: 10px 10px;*/
     }
     /* Agrandamos un poco el container del grid para dar espacio a sus elementos internos */
+    /* Ahora pasa a ser de 4 filas de 300 px*/
     .container{
         display: grid;
         grid-template-columns:repeat(12,1fr);
         grid-template-rows: repeat(4,300px);
     }
-    
+    /* Esto es para que el contenido de los cuadros del grid se pegue al borde así "entra" en pantallas chicas */
+    .item2{
+        padding: 0;
+    }
+    .item3{
+        padding: 0;
+    }
+    .item4{
+        padding: 0;
+    }
+    .item5{
+        padding: 0;
+    }
+    .item6{
+        padding: 0;
+    }
+    .item7{
+        padding: 0;
+    }
 }
 
 
