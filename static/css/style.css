@@ -216,13 +216,13 @@ footer div a{
 }
 .item4{
     padding: 50px 50px 50px 50px;
-    background-color: rgb(46, 41, 41);
+    background-color: var(--secondary-color);
     color: white;
     grid-column:1/7;
     /*grid-row:4/6;*/
 }
 .item4 h2{
-    color:rgb(196, 17, 17);
+    color:var(--primary-color);
     font-size: 3rem;
     font-family: 'Times New Roman', Times, serif;
     margin: 10px 5px;
@@ -238,7 +238,7 @@ footer div a{
     margin: 10px 5px;
 }
 .item4 button{
-    background-color:rgb(196, 17, 17);
+    background-color:var(--primary-color);
     color: white;
     border-radius: 20px;
     border: none;
@@ -247,7 +247,7 @@ footer div a{
     margin: 10px;
 }
 .item5{
-    background-color: rgb(255, 0, 0);
+    background-color: var(--primary-color);
     grid-column:7/-1;
     /*grid-row:4/6;*/
 }
@@ -258,7 +258,8 @@ footer div a{
 }
 .item7{
     padding: 50px 50px 50px 50px;
-    background-color: rgb(116, 41, 41);
+    /*background-color: rgb(116, 41, 41);*/
+    background-color: var(--primary-color);
     grid-column:7/-1;
     color: white;
     /*grid-row:4/6;*/
@@ -280,7 +281,7 @@ footer div a{
     margin: 10px 5px;
 }
 .item7 button{
-    background-color:black;
+    background-color:var(--secondary-color);
     color: white;
     border-radius: 20px;
     border: none;
