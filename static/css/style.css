@@ -21,6 +21,8 @@ a{
     text-decoration: none;
 }
 
+/* ============================ Estilos del header y navbar ============================ */
+
 .header{
     background-color:var(--bg-color);
     color: #fff;
@@ -104,6 +106,11 @@ nav div a{
     text-align: center;
 }
 
+
+/* ======================== Fin de estilos del header y navbar ======================== */
+
+
+
 /* =========================== Inicio de estilos del footer =========================== */
 
 footer{
@@ -148,7 +155,7 @@ footer div a{
 }
 
 
-/* =========================== Fin de estilos del footer =========================== */
+/* ================================== Fin de estilos del footer ==================================== */
 
 
 

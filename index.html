@@ -50,7 +50,7 @@
         <div class="container">
             <div class="item item1">
                 
-                <!-- imagen de prueba
+                <!-- Imagen de prueba, por si sacamos el slider/carrousel
                 <img src="./imagenes/carrousel1.jpg" alt="Obra 1" class="img-grid">
                 -->
 
@@ -126,63 +126,12 @@
                     <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
 
+          
+                <!-- ESTE SCRIPT MANEJA EL SLIDER -->
 
-            
-                <!--
-                    ACA ARRANCA EL SCRIPT QUE LO MANEJA
-                    VER DE SACARLO A UN ARCHIVO
-                -->
-                <script>
-                    let slideIndex = 1;
-                    showSlides(slideIndex);
-                    
-                    function plusSlides(n) {
-                      showSlides(slideIndex += n);
-                    }
-                    
-                    function currentSlide(n) {
-                      showSlides(slideIndex = n);
-                    }
-                    
-                    function showSlides(n) {
-                      let i;
-                      let slides = document.getElementsByClassName("mySlides");
-                      let dots = document.getElementsByClassName("dot");
-                      if (n > slides.length) {slideIndex = 1}    
-                      if (n < 1) {slideIndex = slides.length}
-                      for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";  
-                      }
-                      for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" active", "");
-                      }
-                      slides[slideIndex-1].style.display = "block";  
-                      dots[slideIndex-1].className += " active";
-                    }
-                    /*
-                    function showSlides() {
-                        let i;
-                        let slides = document.getElementsByClassName("mySlides");
-                        let dots = document.getElementsByClassName("dot");
-                        for (i = 0; i < slides.length; i++) {
-                            slides[i].style.display = "none";  
-                        }
-                        slideIndex++;
-                        if (slideIndex > slides.length) {slideIndex = 1}    
-                        for (i = 0; i < dots.length; i++) {
-                            dots[i].className = dots[i].className.replace(" active", "");
-                        }
-                        slides[slideIndex-1].style.display = "block";  
-                        dots[slideIndex-1].className += " active";
-                        setTimeout(showSlides, 6000); // El timeout para que cambie de slide
-                    }
-                    */
-                </script>
+                <script src="./scripts/lp-theater.js"></script>
 
-                <!--
-                    FIN DEL SCRIPT QUE MANEJA EL CARROUSEL
-                -->
-            
+                           
             </div>
 
             <!-- A CONTINUACIÓN SERÍAN 3 FILAS, LA PRIMERA CON UN ENLACE A HISTORIA 
