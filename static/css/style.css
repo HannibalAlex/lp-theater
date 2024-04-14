@@ -326,7 +326,13 @@ footer div a{
         padding: 0;
         margin: 10px 10px;
     }
-   
+    /* Agrandamos un poco el container del grid para dar espacio a sus elementos internos */
+    .container{
+        display: grid;
+        grid-template-columns:repeat(12,1fr);
+        grid-template-rows: repeat(4,300px);
+    }
+    
 }
 
 
