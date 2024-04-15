@@ -69,6 +69,11 @@ nav div a{
     text-align: center;
 }
 
+#boton-radio-img {
+    height: 45px;
+    width: auto;
+}
+
 .nav-links li a {
     /*border: 2px solid black;*/
     /* Este es el texto que aparece en los list items de la navbar */ 
