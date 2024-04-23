@@ -74,6 +74,19 @@ nav div a{
     width: auto;
 }
 
+.rotate {
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(359deg);
+    }
+}
+
 .nav-links li a {
     /*border: 2px solid black;*/
     /* Este es el texto que aparece en los list items de la navbar */ 
