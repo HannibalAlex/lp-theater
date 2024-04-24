@@ -158,7 +158,9 @@ nav div a {
 }
 
 .puertappal {
-    width: 1910px;
+    display: flex;
+    width: auto;
+    flex-direction: column;
     height: auto;
 }
 
