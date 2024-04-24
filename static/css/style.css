@@ -141,6 +141,10 @@ nav div a {
     font-size: 1rem;
 }
 
+.sangria{
+	text-indent: 50px;
+}
+
 .centrado {
     position: absolute;
     top: 92%;
