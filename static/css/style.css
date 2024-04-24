@@ -128,6 +128,10 @@ nav div a {
     text-align: center;
 }
 
+.nav-links a:hover{
+    background-color:#FF2851 ;
+    color: #fff;
+}
 
 /* ======================== Fin de estilos del header y navbar ======================== */
 
