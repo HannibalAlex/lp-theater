@@ -136,7 +136,7 @@ nav div a {
 .contenedor {
     display: flex;
     width: auto;
-    flex-direction: row;
+    flex-direction: column;
     position: relative;
     display: inline-block;
     text-align: left;
