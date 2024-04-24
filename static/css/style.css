@@ -134,6 +134,9 @@ nav div a {
 /* ======================== Inicio de estilos de la página teatro.html ======================== */
 
 .contenedor {
+    display: flex;
+    width: auto;
+    flex-direction: row;
     position: relative;
     display: inline-block;
     text-align: left;
