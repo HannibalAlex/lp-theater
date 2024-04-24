@@ -135,8 +135,7 @@ nav div a {
 
 .contenedor {
     display: flex;
-    width: auto;
-    flex-direction: column;
+    justify-content: space-between;
     position: relative;
     display: inline-block;
     text-align: left;
