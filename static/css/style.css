@@ -134,53 +134,62 @@ nav div a {
 /* ======================== Inicio de estilos de la página teatro.html ======================== */
 
 .contenedor {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    display: inline-block;
-    text-align: left;
-    color: black;
-    font-size: 1rem;
+    margin: 15px auto;
+    width: 100%;
+    background-color: var(--secondary-color);
 }
 
-.sangria{
-	text-indent: 50px;
+.imagenTeatro {
+    max-width: 800px;
+    float: left;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
-.centrado {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 92%;
-    left: 23%;
-    transform: translate(-50%, -50%);
+.text-box {
+    color: #fff;
 }
 
-.puertappal {
-    display: flex;
-    justify-content: space-between;
-    height: auto;
+.text-box h1 {
+    font-size: 42px;
+    color: red;
 }
 
-.colorDFondo {
-    display: flex;
-    width: auto;
-    flex-direction: column;
-    padding: 0% 2% 2% 2%;
-    color: black;
-    text-align: left;
-    font-size: 1.5rem;
+.text-box h2 {
+    font-size: 32px;
+    color: red;
+}
+
+.text-box p {
+    font-size: 22px;
+    margin: 10px;
+}
+
+.text-box ul {
+    font-size: 22px;
+    margin: 10px;
+}
+
+.rojo {
+    color: red;
+}
+
+.sangria {
+    text-indent: 40px;
 }
 
 .animacion {
     animation: mover-izquierda-derecha 2s 1;
     animation-fill-mode: forwards;
-    color: #946815;
+    color: red;
 }
 
 @keyframes mover-izquierda-derecha {
     from {
-        transform: translateX(-100px);
+        transform: translateX(0px);
     }
 
     to {
