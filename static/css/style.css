@@ -161,6 +161,9 @@ nav div a {
 }
 
 .colorDFondo {
+    display: flex;
+    width: auto;
+    flex-direction: row;
     padding: 0% 2% 2% 2%;
     color: black;
     text-align: left;
