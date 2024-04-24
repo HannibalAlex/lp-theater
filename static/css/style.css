@@ -176,7 +176,7 @@ nav div a {
     }
 
     to {
-        transform: translateX(800px);
+        transform: translateX(300px);
     }
 }
 
