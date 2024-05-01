@@ -825,6 +825,13 @@ form h2{
     margin-bottom: 10px;
 }
 
+.form-text{
+    color: #eee;
+    padding: 6px 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 input, select {
     width: 100%;
     box-sizing: border-box;
