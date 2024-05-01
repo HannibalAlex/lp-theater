@@ -647,7 +647,7 @@ body {
 
     /* Hace responsive la navbar */
     nav {
-        height: 100px;
+        height: 130px;
         flex-direction: column;
         align-items: center;
         padding: 0;
@@ -663,7 +663,7 @@ body {
     }
 
     /* Agrandamos un poco el container del grid para dar espacio a sus elementos internos */
-    /* Ahora pasa a ser de 4 filas de 300 px*/
+    /* Ahora pasa a ser de 4 filas, una de 400px para que entre el carrousell y 3 de 300 px*/
     .container {
         display: grid;
         grid-template-columns: repeat(12, 1fr);

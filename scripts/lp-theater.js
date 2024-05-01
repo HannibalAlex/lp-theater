@@ -24,6 +24,9 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+
+/* Función para que los slides del carrousel se muevan solos cadda 6 segundos, no esta funcionando bien todavía */
 /*
 function showSlides() {
     let i;
