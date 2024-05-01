@@ -17,12 +17,6 @@
 
 <body>
     <header class="header">
-        <!--
-            La barra de navegación son 3 elementos:
-            - Un div con el logo (clickeable)
-            - Una lista de links (Historia, El teatro, Programacion, Contacto)
-            - Un div con el botón de iniciar sesión
-        -->
         <nav>
             <div>
                 <a href="index.html">
@@ -49,13 +43,12 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section id="form-wrapper">
+    <main class="main-form">
+        <form>
             <h2>Registro de nuevo usuario</h2>
-            <form action="#" id="formregister" method="GET" novalidate>
             <div class="form-control">
                 <label for="firstname">Nombre</label>
-                <input type="text" id="firstname" name="firstname" required placeholder="María">
+                <input type="text" id="firstname" name="firstname" required placeholder="Juan">
             </div>
             <div class="error" id="error-firstname"></div>
 
@@ -66,8 +59,8 @@
             <div class="error" id="error-lastname"></div>
 
             <div class="form-control">
+                <label for="tipo-doc">Tipo de documento</label>
                 <select name="tipo-doc" id="tipo-doc" class="form-select">
-                    <option value=""> </option>
                     <option value="dni">DNI</option>
                     <option value="pasaporte">Pasaporte</option>
                 </select>
@@ -91,20 +84,14 @@
             </div>
             <div class="error" id="error-password"></div>
 
-            
-
-            <div class="form-terms">
-                <div class="terms">
-                    <input type="checkbox" id="terms">
-                    <label for="terms">Al registrarme acepto términos y condiciones</label>
-                </div>
+            <div class="form-term">
+                <label for="checkbox">Al registrarme acepto términos y condiciones</label>
+                <input type="checkbox" id="checkbox" name="checkbox" class="checkbox">                     
             </div>
-            <button type="submit">Registrate</button>
-            <div class="form-help">
-                <a href="#">Necesitas ayuda?</a>
+            <div class="form-control">
+            <button class="registrarme" type="submit">Registrarme</button>
             </div>
-            </form>
-        </section>
+        </form>
     </main>
     <footer>
         <div>

@@ -797,3 +797,71 @@ body {
 
 /* ====================================== REGISTRO ====================================== */
 
+/* .main-form {
+    background-color: var(--gold-color);
+} */
+
+form {
+    background-color: var(--secondary-color);
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 0;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    /* box-shadow: 0px -2px 45px #0007; */
+}
+form h2{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #eee;
+    font-weight: 400;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.form-control{
+    padding: 6px 20px;
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #eee;
+    margin-top: 4px;
+}
+
+label{
+    font-size: 0.9em;
+    color: #eee;
+    line-height: 2;
+}
+
+option{
+    background-color: var(--secondary-color);
+}
+.form-term{
+    padding: 6px 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.checkbox{
+    width: auto;
+    height: 10px;
+}
+.registrarme {
+    color: #eee;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 6px;
+    width: 100%;
+    margin: auto;
+    font-weight: 700;
+    font-size: 16px;
+  
+}
