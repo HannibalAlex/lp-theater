@@ -42,4 +42,3 @@ function showSlides() {
     setTimeout(showSlides, 6000); // El timeout para que cambie de slide
 }
 */
-/*
