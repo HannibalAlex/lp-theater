@@ -42,3 +42,10 @@ function showSlides() {
     setTimeout(showSlides, 6000); // El timeout para que cambie de slide
 }
 */
+/*
+Código JS de los botones "MÁS INFO", "COMPRAR ENTRADAS", y los tres "Ver más", todos de la página index.html
+*/
+
+document.getElementById("miBoton").addEventListener("click", function() {
+  window.location.href = document.getElementById("miEnlace").href;
+});
