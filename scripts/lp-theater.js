@@ -42,3 +42,14 @@ function showSlides() {
     setTimeout(showSlides, 6000); // El timeout para que cambie de slide
 }
 */
+
+/*
+Función que redirige al hacer clic en el botón
+*/
+
+document.getElementById("redireccionar").addEventListener("click", function() {
+  // URL del sitio web al que quieres redirigir
+  var url = "https://github.com/HannibalAlex/lp-theater/blob/main/programacion.html";
+  // Redireccionar a la URL especificada
+  window.location.href = url;
+});
