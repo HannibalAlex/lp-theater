@@ -826,6 +826,7 @@ form h2{
 }
 
 .form-text{
+    font-family: 'Roboto', sans-serif;
     color: #eee;
     padding: 6px 20px;
     margin-bottom: 10px;
