@@ -34,14 +34,14 @@ a {
     width: 100%;
     z-index: 9999;
     color: var(--bg-input-color);
-
+    box-shadow: 0px 10px 15px -12px #afafaf;
 }
 
 
 nav {
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 60px;
     padding: 0 50px;
 }
 
@@ -785,91 +785,126 @@ body {
     height: 60px;
     border-radius: 30px;
     font-size: 0.7rem;
-    padding: 5px 10px;
+    padding: 8px 12px;
 }
 
 .evento img {
     width: 100%;
     object-fit: cover;
 }
+.evento a:hover{
+    background-color: white ;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
 
 /* ================================== FIN PROGRAMACION ================================== */
 
-/* ====================================== REGISTRO ====================================== */
+/* ====================================== REGISTRO / ENTRADAS ====================================== */
 
-/* .main-form {
-    background-color: var(--gold-color);
-} */
+.contenedor-form {
+    display: grid;
+    grid-template-columns: 450px 450px;
+    grid-template-rows: 579px;
+    justify-content: center;
+    padding: 60px 0px;
+}
 
-form {
-    background-color: var(--secondary-color);
+.form-caja {
+    background-color: var(--secondary-color) ;
     font-family: 'Roboto', sans-serif;
-    padding: 10px 0;
-    max-width: 500px;
-    margin: auto;
-    margin-top: 50px;
-    /* box-shadow: 0px -2px 45px #0007; */
+    box-shadow: 0px 15px 15px -10px #0009;
 }
-form h2{
-    text-align: center;
-    margin: 0;
-    margin-bottom: 10px;
+
+.form-caja h2 {
+    margin-top: 10px;
     color: #eee;
-    font-weight: 400;
-    font-size: 22px;
-    padding: 10px;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 10px 40px;
 }
 
-.form-control{
-    padding: 6px 20px;
-    margin-bottom: 10px;
+.form-control {
+    padding: 0  40px;
+    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
-.form-text{
+.form-text {
     font-family: 'Roboto', sans-serif;
     color: #eee;
-    padding: 6px 20px;
+    padding: 10px 20px;
     margin-bottom: 10px;
     text-align: center;
+}
+
+.form-text-reserva {
+    font-family: 'Roboto', sans-serif;
+    color: #eee;
+    padding: 10px 40px;
+    margin-bottom: 10px;
+    font-size: 12px;
 }
 
 input, select {
     width: 100%;
-    box-sizing: border-box;
-    padding: 6px 12px;
+    padding: 6px 10px;
     border: 1px solid #999;
     border-radius: 6px;
     background-color: transparent;
     color: #eee;
-    margin-top: 4px;
+    margin-top: 3px;
+    font-size: 0.8em;
 }
 
-label{
-    font-size: 0.9em;
-    color: #eee;
+label {
+    font-size: 0.8em;
+    color: #eeeeeecb;
     line-height: 2;
 }
 
-option{
+option {
     background-color: var(--secondary-color);
 }
-.form-term{
-    padding: 6px 20px;
-    margin-bottom: 10px;
+
+.form-term {
+    padding: 2px 20px;
+    margin-bottom: 5px;
     text-align: center;
 }
-.checkbox{
+
+.checkbox {
     width: auto;
     height: 10px;
 }
+
 .registrarme {
     color: #eee;
     background-color: var(--primary-color);
     padding: 10px 20px;
-    border-radius: 6px;
+    border-radius: 30px;
     width: 100%;
-    margin: auto;
     font-weight: 700;
-    font-size: 16px;
-  
+    font-size: 15px;
+    margin-bottom: 20px;
 }
+
+.form-caja img{
+    background-color: rgb(110, 207, 202);
+    width: 100%;
+    object-fit:cover;
+}
+
+.reservas {
+    color: #eee;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 30px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+/* ====================================== FIN REGISTRO / ENTRADAS ====================================== */

@@ -44,51 +44,57 @@
         </nav>
     </header>
     <main class="main-form">
-        <form>
-            <h2>Reservar Entradas</h2>
+        <div class="contenedor-form">
+            <div class="form-caja"> 
+                <img src="./imagenes/reserva2.jpg" alt="">
+            </div>
+            <form class="form-caja">
+                <h2>Reservar Entradas</h2>
 
-            <div class="form-text">
-                Seleccione la obra, la fecha y la cantidad de entradas que necesita y haga click en Solicitar Reservas.  Nos comunicaremos por mail confirmando si hay disponibilidad.
-            </div>
+                <div class="form-text-reserva">
+                    Seleccione la obra, la fecha y la cantidad de entradas que necesita y haga click en Solicitar Reservas.  
+                    Nos comunicaremos por mail confirmando si hay disponibilidad.
+                </div>
 
-            <div class="form-control">
-                <label for="obra-elegida">Obra/Evento</label>
-                <select name="obra-elegida" id="obra-elegida" class="form-select">
-                    <option value="obraCamerataAcademica">Camerata Académica</option>
-                    <option value="obraCicloPianistas">Ciclo de Pianistas</option>
-                    <option value="obraCorporica">Corporica</option>
-                    <option value="obraGiselle">Giselle</option>
-                    <option value="obraPrometeo">Prometeo Sostakovic</option>
-                    <option value="obraRomeoYJulieta">Romeo y Julieta</option>
-                </select>
-            </div>
+                <div class="form-control">
+                    <label for="obra-elegida">Obra/Evento</label>
+                    <select name="obra-elegida" id="obra-elegida" class="form-select">
+                        <option value="obraCamerataAcademica">Camerata Académica</option>
+                        <option value="obraCicloPianistas">Ciclo de Pianistas</option>
+                        <option value="obraCorporica">Corporica</option>
+                        <option value="obraGiselle">Giselle</option>
+                        <option value="obraPrometeo">Prometeo Sostakovic</option>
+                        <option value="obraRomeoYJulieta">Romeo y Julieta</option>
+                    </select>
+                </div>
 
-            <div class="form-control">
-                <label for="fecha-obra">Fecha</label>
-                <input type="date" name="fecha-obra" id="fecha-obra">
-            </div>
+                <div class="form-control">
+                    <label for="fecha-obra">Fecha</label>
+                    <input type="date" name="fecha-obra" id="fecha-obra">
+                </div>
 
-            <div class="form-control">
-                <label for="cant-entradas">Cantidad de Entradas</label>
-                <input type="cant-entradas" id="cant-entradas" name="cant-entradas" required placeholder="1">
-            </div>
-            <div class="error" id="error-password"></div>
+                <div class="form-control">
+                    <label for="cant-entradas">Cantidad de Entradas</label>
+                    <input type="cant-entradas" id="cant-entradas" name="cant-entradas" required placeholder="1">
+                </div>
+                <div class="error" id="error-password"></div>
 
-            <div class="form-control">
-                <label for="email">Email de Contacto</label>
-                <input type="email" id="email" name="email" required placeholder="ejemplo@ejemplo.com">
-            </div>
-            <div class="error" id="error-email"></div>
+                <div class="form-control">
+                    <label for="email">Email de Contacto</label>
+                    <input type="email" id="email" name="email" required placeholder="ejemplo@ejemplo.com">
+                </div>
+                <div class="error" id="error-email"></div>
 
-            
-            <div class="form-term">
-                <label for="checkbox">Acepto que mi reserva está sujeta a disponibilidad de lugares</label>
-                <input type="checkbox" id="checkbox" name="checkbox" class="checkbox">                     
-            </div>
-            <div class="form-control">
-            <button class="registrarme" type="submit">Solicitar Reservas</button>
-            </div>
-        </form>
+                
+                <div class="form-term">
+                    <label for="checkbox">Acepto que mi reserva está sujeta a disponibilidad de lugares</label>
+                    <input type="checkbox" id="checkbox" name="checkbox" class="checkbox">                     
+                </div>
+                <div class="form-control">
+                    <button class="reservas" type="submit">Solicitar Reservas</button>
+                </div>
+            </form>
+        </div> 
     </main>
     <footer>
         <div>
