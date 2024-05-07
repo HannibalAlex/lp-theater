@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./static/css/style.css">
 
     <script>
+        // Script para validar el formulario antes de enviarlo
         function validateForm() {
           let correo = document.forms["formulario-entradas"]["email"].value;
           let cantidadEntradas = document.forms["formulario-entradas"]["cant-entradas"].value;
@@ -36,13 +37,18 @@
             return false;
           }
 
+          // Regex para ver que el correo sea efectivamente un correo
+          if (!correo.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/) )
+          {
+            alert("Dirección de correo inválida")
+            return false;
+          }
+
+          // El checkbox de los términos y condiciones debe estar clickeado
           if (checkBox.checked != 1){
             alert("Debe aceptar los términos y condiciones")
             return false;
           }
-
-          
-
         }
     </script>
 
@@ -112,13 +118,13 @@
 
                 <div class="form-control">
                     <label for="cant-entradas">Cantidad de Entradas</label>
-                    <input type="cant-entradas" id="cant-entradas" name="cant-entradas" placeholder="Elegir">
+                    <input type="number" id="cant-entradas" name="cant-entradas" placeholder="Elegir">
                 </div>
                 <div class="error" id="error-password"></div>
 
                 <div class="form-control">
                     <label for="email">Email de Contacto</label>
-                    <input type="email" id="email" name="email" placeholder="ejemplo@ejemplo.com">
+                    <input type="text" id="email" name="email" placeholder="ejemplo@ejemplo.com">
                 </div>
                 <div class="error" id="error-email"></div>
 
