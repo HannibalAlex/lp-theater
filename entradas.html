@@ -13,6 +13,39 @@
         href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./static/css/style.css">
+
+    <script>
+        function validateForm() {
+          let correo = document.forms["formulario-entradas"]["email"].value;
+          let cantidadEntradas = document.forms["formulario-entradas"]["cant-entradas"].value;
+          let fechaObra = document.forms["formulario-entradas"]["fecha-obra"].value;
+          let checkBox = document.forms["formulario-entradas"]["checkbox"];
+          
+          if (fechaObra == ""){
+            alert("Elija una fecha de función")
+            return false;
+          }
+
+          if (cantidadEntradas =="") {
+            alert("Debe seleccionar la cantidad de entradas");
+            return false;
+          }
+
+          if (correo == "") {
+            alert("Debe ingresar su email");
+            return false;
+          }
+
+          if (checkBox.checked != 1){
+            alert("Debe aceptar los términos y condiciones")
+            return false;
+          }
+
+          
+
+        }
+    </script>
+
 </head>
 
 <body>
@@ -52,7 +85,7 @@
             <div class="form-caja"> 
                 <img src="./imagenes/reserva2.jpg" alt="">
             </div>
-            <form class="form-caja">
+            <form name="formulario-entradas" class="form-caja" onsubmit="return validateForm()" method="post">
                 <h2>Reservar Entradas</h2>
 
                 <div class="form-text-reserva">
@@ -79,20 +112,20 @@
 
                 <div class="form-control">
                     <label for="cant-entradas">Cantidad de Entradas</label>
-                    <input type="cant-entradas" id="cant-entradas" name="cant-entradas" required placeholder="1">
+                    <input type="cant-entradas" id="cant-entradas" name="cant-entradas" placeholder="Elegir">
                 </div>
                 <div class="error" id="error-password"></div>
 
                 <div class="form-control">
                     <label for="email">Email de Contacto</label>
-                    <input type="email" id="email" name="email" required placeholder="ejemplo@ejemplo.com">
+                    <input type="email" id="email" name="email" placeholder="ejemplo@ejemplo.com">
                 </div>
                 <div class="error" id="error-email"></div>
 
                 
                 <div class="form-term">
                     <label for="checkbox">Acepto que mi reserva está sujeta a disponibilidad de lugares</label>
-                    <input type="checkbox" id="checkbox" name="checkbox" class="checkbox">                     
+                    <input type="checkbox" id="checkbox" name="checkbox" class="checkbox" >                     
                 </div>
                 <div class="form-control">
                     <button class="reservas" type="submit">Solicitar Reservas</button>
