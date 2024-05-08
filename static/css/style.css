@@ -37,7 +37,6 @@ a {
     box-shadow: 0px 10px 15px -12px #afafaf;
 }
 
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -111,7 +110,6 @@ nav div a {
 
     -o-object-fit: scale-down;
     object-fit: scale-down;
-
 }
 
 .btn-login {
@@ -128,8 +126,8 @@ nav div a {
     text-align: center;
 }
 
-.nav-links a:hover{
-    background-color:#FF2851 ;
+.nav-links a:hover {
+    background-color: #FF2851;
     color: #fff;
 }
 
@@ -148,7 +146,7 @@ nav div a {
     margin: 0;
     height: 100%;
 }
-  
+
 .text-teatro {
     width: 30%;
     padding-left: 50px;
@@ -171,24 +169,28 @@ nav div a {
     font-weight: 300;
     line-height: 1.5;
 }
-  
+
 .imagen-teatro {
     width: 40%;
     padding: 0;
     margin: 0;
 }
-  
+
 .imagen-teatro img {
     align-self: center;
     justify-self: center;
     width: 100%;
-    height: 400px; /* Ajusta la altura al 100% del contenedor */
-    object-fit: cover; /* Mantiene la relación de aspecto y cubre el contenedor */
-    margin: 0; /* Elimina el margen */
-    display: block; /* Asegura que la imagen se muestre como bloque */    
+    height: 400px;
+    /* Ajusta la altura al 100% del contenedor */
+    object-fit: cover;
+    /* Mantiene la relación de aspecto y cubre el contenedor */
+    margin: 0;
+    /* Elimina el margen */
+    display: block;
+    /* Asegura que la imagen se muestre como bloque */
 }
 
-.info-teatro{
+.info-teatro {
     margin: 3% 20% 6% 20%;
 }
 
@@ -200,6 +202,7 @@ nav div a {
     color: var(--primary-color);
     padding-bottom: 5px;
 }
+
 .info-teatro h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -211,6 +214,7 @@ nav div a {
 .info-teatro p {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    text-indent: 1em;
     color: var(--secondary-color);
     font-weight: 400;
     line-height: 1.5;
@@ -233,8 +237,135 @@ nav div a {
 }
 
 /* ======================== Fin de estilos de la página teatro.html ======================== */
+/* ======================== Inicio de estilos de la página historia.html ======================== */
 
 
+.banner-historia {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    background-color: var(--secondary-color);
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.text-historia {
+    width: 30%;
+    padding-left: 50px;
+}
+
+.text-historia h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: var(--primary-color);
+}
+
+
+.text-historia p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+    color: white;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.imagen1-historia {
+    width: 40%;
+    padding: 0;
+    margin: 0;
+}
+
+.imagen1-historia img {
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    height: 400px;
+    /* Ajusta la altura al 100% del contenedor */
+    object-fit: cover;
+    /* Mantiene la relación de aspecto y cubre el contenedor */
+    margin: 0;
+    /* Elimina el margen */
+    display: block;
+    /* Asegura que la imagen se muestre como bloque */
+}
+
+.imagen2-historia {
+    width: 40%;
+    padding: 0;
+    margin: 0;
+}
+
+.imagen2-historia img {
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    height: 400px;
+    /* Ajusta la altura al 100% del contenedor */
+    object-fit: cover;
+    /* Mantiene la relación de aspecto y cubre el contenedor */
+    margin: 0;
+    /* Elimina el margen */
+    display: block;
+    /* Asegura que la imagen se muestre como bloque */
+}
+
+.imagen3-historia {
+    width: 40%;
+    padding: 0;
+    margin: 0;
+}
+
+.imagen3-historia img {
+    align-self: center;
+    justify-self: center;
+    padding-top: 15px;
+    padding-left: 15px;
+    width: 150%;
+    height: 600px;
+    /* Ajusta la altura al 100% del contenedor */
+    object-fit: cover;
+    /* Mantiene la relación de aspecto y cubre el contenedor */
+    margin: 0;
+    /* Elimina el margen */
+    display: block;
+    /* Asegura que la imagen se muestre como bloque */
+}
+
+.info-historia {
+    margin: 3% 20% 6% 20%;
+}
+
+.info-historia h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--primary-color);
+    padding-bottom: 5px;
+}
+
+.info-historia p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-indent: 1em;
+    color: var(--secondary-color);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.div-historia {
+    border-bottom: 1px solid var(--secondary-color);
+    padding-bottom: 35px;
+    padding-top: 20px;
+}
+
+/* ======================== Fin de estilos de la página historia.html ======================== */
 /* ======================== Inicio de estilos del footer =================================== */
 
 footer {
@@ -280,9 +411,6 @@ footer div a {
 
 
 /* ================================== Fin de estilos del footer ==================================== */
-
-
-
 /* =========================== Inicio de Estilos para la grilla del body =========================== */
 
 
@@ -527,9 +655,6 @@ body {
 
 
 /* ========================= Fin de Estilos para la grilla del body ========================= */
-
-
-
 /* =========================== Estilos para el SLIDER / CARROUSEL =========================== */
 
 /* Slideshow container */
@@ -670,9 +795,6 @@ body {
 
 
 /* =========================== Fin del SLIDER / CARROUSEL =========================== */
-
-
-
 /* ================================== Media querys ================================== */
 
 @media(max-width:900px) {
@@ -740,7 +862,6 @@ body {
     }
 }
 
-
 /* ================================== PROGRAMACION ================================== */
 
 .lista-eventos {
@@ -771,8 +892,6 @@ body {
     border-bottom-style: solid;
     padding-bottom: 10px;
     padding-top: 20px;
-
-
 }
 
 .evento1-h2 {
@@ -824,14 +943,14 @@ body {
     width: 100%;
     object-fit: cover;
 }
-.evento a:hover{
-    background-color: white ;
+
+.evento a:hover {
+    background-color: white;
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
 }
 
 /* ================================== FIN PROGRAMACION ================================== */
-
 /* ====================================== REGISTRO / ENTRADAS ====================================== */
 
 .contenedor-form {
@@ -843,7 +962,7 @@ body {
 }
 
 .form-caja {
-    background-color: var(--secondary-color) ;
+    background-color: var(--secondary-color);
     font-family: 'Roboto', sans-serif;
     box-shadow: 0px 15px 15px -10px #0009;
 }
@@ -857,7 +976,7 @@ body {
 }
 
 .form-control {
-    padding: 0  40px;
+    padding: 0 40px;
     margin-bottom: 5px;
     margin-top: 10px;
 }
@@ -878,7 +997,8 @@ body {
     font-size: 12px;
 }
 
-input, select {
+input,
+select {
     width: 100%;
     padding: 6px 10px;
     border: 1px solid #999;
@@ -921,10 +1041,10 @@ option {
     margin-bottom: 20px;
 }
 
-.form-caja img{
+.form-caja img {
     background-color: rgb(110, 207, 202);
     width: 100%;
-    object-fit:cover;
+    object-fit: cover;
 }
 
 .reservas {
