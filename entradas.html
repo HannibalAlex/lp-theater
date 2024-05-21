@@ -17,10 +17,15 @@
     <script>
         // Script para validar el formulario antes de enviarlo
         function validateForm() {
+          // Forma "vieja" de encontrar los elementos, antes de que nos enseñaran en clase
+          //let cantidadEntradas = document.forms["formulario-entradas"]["cant-entradas"].value;
+          //let fechaObra = document.forms["formulario-entradas"]["fecha-obra"].value;
+          //let checkBox = document.forms["formulario-entradas"]["checkbox"];
+          
           let correo = document.forms["formulario-entradas"]["email"].value;
-          let cantidadEntradas = document.forms["formulario-entradas"]["cant-entradas"].value;
-          let fechaObra = document.forms["formulario-entradas"]["fecha-obra"].value;
-          let checkBox = document.forms["formulario-entradas"]["checkbox"];
+          let cantidadEntradas = document.getElementById("cant-entradas").value;
+          let fechaObra = document.getElementById("fecha-obra").value;
+          let checkBox = document.getElementById("checkbox");
           
           if (fechaObra == ""){
             alert("Elija una fecha de función")
@@ -29,6 +34,11 @@
 
           if (cantidadEntradas =="") {
             alert("Debe seleccionar la cantidad de entradas");
+            return false;
+          }
+
+          if (cantidadEntradas <= 0) {
+            alert("Debe seleccionar una cantidad mayor a cero");
             return false;
           }
 
