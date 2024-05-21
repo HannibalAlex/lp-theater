@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 
+
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +15,61 @@
         href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./static/css/style.css">
+
+    <script>
+        // Script para validar el formulario antes de enviarlo
+        function validateForm() {
+          
+          let firstname = document.getElementById("firstname").value;
+          let lastname = document.getElementById("lastname").value;
+          let numdoc = document.getElementById("num-doc").value;
+          let checkBox = document.getElementById("checkbox");
+          let correo = document.getElementById("email").value;
+          let password = document.getElementById("password").value;
+  
+          if (firstname == "") {
+            alert("Ingrese su nombre");
+            return false;
+          }
+          
+          
+          if (lastname == "") {
+            alert("Ingrese su apellido");
+            return false;
+          }
+
+          if (numdoc == "") {
+            alert("Ingrese su documento");
+            return false;
+          }
+
+          
+          if (correo == "") {
+            alert("Debe ingresar su email");
+            return false;
+          }
+    
+          // Regex para ver que el correo sea efectivamente un correo
+          if (!correo.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/) )
+          {
+            alert("Dirección de correo inválida")
+            return false;
+          }
+
+          if (password == "") {
+            alert("Ingrese una contraseña");
+            return false;
+          }
+
+          // El checkbox de los términos y condiciones debe estar clickeado
+          if (checkBox.checked != 1){
+            alert("Debe aceptar los términos y condiciones")
+            return false;
+          }
+        }
+    </script>
+
+
 </head>
 
 <body>
@@ -53,17 +110,17 @@
                 <img src="./imagenes/registro2.jpg" alt="">
             </div>
        
-            <form class="form-caja">
+            <form class="form-caja" onsubmit="return validateForm()" method="post">
                 <h2>Registrarme</h2>
                 <div class="form-control">
                     <label for="firstname">Nombre</label>
-                    <input type="text" id="firstname" name="firstname" required placeholder="Juan">
+                    <input type="text" id="firstname" name="firstname" placeholder="Juan">
                 </div>
                 <div class="error" id="error-firstname"></div>
 
                 <div class="form-control">
                     <label for="lastname">Apellido</label>
-                    <input type="text" id="lastname" name="lastname" required placeholder="Lopez">
+                    <input type="text" id="lastname" name="lastname" placeholder="Lopez">
                 </div>
                 <div class="error" id="error-lastname"></div>
 
@@ -77,19 +134,19 @@
 
                 <div class="form-control">
                     <label for="num-doc">Número de documento</label>
-                    <input type="num-doc" id="num-doc" name="num-doc" required placeholder="1234">
+                    <input type="num-doc" id="num-doc" name="num-doc" placeholder="1234">
                 </div>
                 <div class="error" id="error-password"></div>
 
                 <div class="form-control">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required placeholder="ejemplo@ejemplo.com">
+                    <input type="text" id="email" name="email" placeholder="ejemplo@ejemplo.com">
                 </div>
                 <div class="error" id="error-email"></div>
 
                 <div class="form-control">
                     <label for="password">Contraseña</label>
-                    <input type="password" id="password" name="password" required placeholder="1234">
+                    <input type="password" id="password" name="password"  placeholder="1234">
                 </div>
                 <div class="error" id="error-password"></div>
 
