@@ -967,6 +967,10 @@ body {
     box-shadow: 0px 15px 15px -10px #0009;
 }
 
+.form-control2:nth-child(2){
+    margin-top: 50px;
+
+}
 .form-caja h2 {
     margin-top: 10px;
     color: #eee;
@@ -975,10 +979,23 @@ body {
     padding: 10px 40px;
 }
 
+.bienvenido h2{
+    margin-top: 50px;
+    color: #eee;
+    font-weight: 300;
+    font-size: 30px;
+    padding: 10px 40px;
+}
 .form-control {
     padding: 0 40px;
     margin-bottom: 5px;
     margin-top: 10px;
+}
+
+.form-control2 {
+    padding: 0 40px;
+    margin-bottom: 5px;
+    margin-top: 20px;
 }
 
 .form-text {
@@ -1028,6 +1045,28 @@ option {
 .checkbox {
     width: auto;
     height: 10px;
+}
+
+.login {
+    color: #eee;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 30px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+.registrate {
+    display: flex;
+    justify-content: center;
+}
+
+.registrate a {
+    text-decoration: none;
+    color: #eeeeeecb;
+    font-size: 13px;
 }
 
 .registrarme {
