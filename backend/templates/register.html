@@ -1,0 +1,53 @@
+{% extends './base.html' %}
+{% block titulo %}
+Registrarme
+{% endblock %}
+{% block contenido %}
+ 
+
+
+
+    <section></br></br></br></br></br>
+
+        <div align="center">
+          <div align="center" class="border">
+            <div>
+                <h1 class="word">Registrar Usuario</h1>
+            </div></br></br></br>
+
+            <div>
+
+                <form action="{{ url_for('register') }}" method="post">
+
+                  <div class="msg">{{ msg }}</div>
+
+                    <input id="nombre" name="nombre" type="text" placeholder="Ingresa tu nombre" class="textbox"/></br></br>
+
+                    <input id="apellido" name="apellido" type="text" placeholder="Ingresa tu apellido" class="textbox"/></br></br>
+
+                    <input id="dni" name="dni" type="number" placeholder="Ingresa tu dni" class="textbox"/></br></br>
+
+                    <input id="password" name="password" type="password" placeholder="Ingresa tu Password" class="textbox"/></br></br>
+
+                    <input id="email" name="email" type="text" placeholder="Ingresa tu Email (sera tu id)" class="textbox"/></br></br>
+
+                    <input type="submit" class="btn btn-outline-primary" value="Registrarme"></br>
+
+                </form>
+
+            </div>
+
+            </br>
+
+            <p class="bottom">Ya tenes cuenta? &nbsp<a class="bottom" href="{{url_for('login')}}"> Logueate aquí</a></p>
+
+          </div>
+
+        </div>
+
+
+      </section>
+
+
+
+{% endblock %}
