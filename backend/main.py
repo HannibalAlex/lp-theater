@@ -88,8 +88,11 @@ def login():
         password = request.form['password']
         
         # Busco en la base si existe la cuenta con ese user y pass
-        account=basedatos.iniciar_sesion(username,password) 
-
+        try:
+            account=basedatos.iniciar_sesion(username,password) 
+        except Exception as e:
+                print(f"Ha ocurrido el error {e}")
+        
         # Si existe la cuenta creo la sesión y redirijo a profile.html
         if account:
             session['loggedin'] = True
@@ -131,7 +134,11 @@ def register():
 
 
         # Chequea que la cuenta a ingresar no exista ya en la BD
-        account = basedatos.buscar_cuenta(email)
+        try:
+            account = basedatos.buscar_cuenta(email)
+        except Exception as e:
+            print(f"Ha ocurrido el error {e}")
+            
 
         if account:
             msg = 'Cuenta existente !'
@@ -150,8 +157,12 @@ def register():
             msg = 'Completar todos los campos!'
 
         else:
-            basedatos.crear_usuario(nombre, apellido, dni, email, password)
-            msg = 'Te registraste exitosamente, ya podes loguearte desde la pantalla de login!'
+            try:
+                basedatos.crear_usuario(nombre, apellido, dni, email, password)
+            except Exception as e:
+                print(f"Ha ocurrido el error {e}")
+            finally:
+                msg = 'Te registraste exitosamente, ya podes loguearte desde la pantalla de login!'
 
     elif request.method == 'POST':
         msg = 'Por favor completar todos los campos !'
